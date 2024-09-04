@@ -6,7 +6,7 @@ const main = async () => {
   const expressApp = {
     name: "expressApp",
     dockerFilePath: "app/Dockerfile",
-    dockerBuildContext: "expressApp",
+    dockerBuildContext: "app",
   };
 
 
