@@ -1,4 +1,5 @@
 {
+  "type": "module",
   "dependencies": {
     "@restackio/restack-sdk-cloud-ts": "^1.0.3"
   }
