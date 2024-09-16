@@ -47,7 +47,7 @@ RUN superset load_examples
 RUN superset init
 
 # Make port 8088 available to the world outside this container
-EXPOSE 8088
+EXPOSE 80
 
 # Run Superset
-CMD ["gunicorn", "--bind", "0.0.0.0:8088", "--workers", "4", "--timeout", "120", "--limit-request-line", "0", "--limit-request-field_size", "0", "superset.app:create_app()"]
+CMD ["gunicorn", "--bind", "0.0.0.0:80", "--workers", "4", "--timeout", "120", "--limit-request-line", "0", "--limit-request-field_size", "0", "superset.app:create_app()"]
